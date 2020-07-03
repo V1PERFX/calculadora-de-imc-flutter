@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Home(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
@@ -60,7 +61,7 @@ class _HomeState extends State<Home> {
             IconButton(icon: Icon(Icons.refresh), onPressed: _resetFields)
           ],
         ),
-        backgroundColor: Colors.teal[50],
+        backgroundColor: Colors.white,
         body: SingleChildScrollView(
           padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
           child: Form(
